@@ -105,11 +105,11 @@ const App = () => {
           Add Task
         </button>
       </div>
-      <ul className='bg-gray-100 rounded-md shadow-md p-3'>
-        {tasks.map((task) => (
+      <ul className=''>
+        {tasks?.map((task) => (
           <li
             key={task.id}
-            className="flex flex-col md:flex-row items-center justify-between py-2 border-b border-gray-300"
+            className="bg-gray-100 rounded-md shadow-md p-3 flex flex-col md:flex-row items-center justify-between py-2 border-b border-gray-300 my-3"
           >
             <div className="flex items-center">
               <input
